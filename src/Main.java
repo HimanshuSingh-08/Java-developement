@@ -20,24 +20,51 @@ public class Main {
 
 
         //------------------------Swap two integers -----------------------//
-        int a = 420;
-        int b = 204;
+//        int a = 1234567890;
+//        int b = 1234567890;
+//
+//        int temp ;
+//        temp = a;
+//        a = b;
+//        b = temp;
+//        System.out.println(a + " " + b);
+//
+//        a = a + b;
+//        b = a - b;
+//        a = a-b;
+//        System.out.println(a + " " + b);
+//
+//        a = a^b;
+//        b = a^b;
+//        a = a^b;
+//        System.out.println(a + " " + b);
+//
+//        int sa = 12;
+//        int sb = 43;
+//        sa = sa + sb - (sb = sa);
+//        System.out.println(sa + " " + sb);
 
-        int temp ;
-        temp = a;
-        a = b;
-        b = temp;
-        System.out.println(a + " " + b);
+        //------------------Find Largest of three---------------//
+        int num1 , num2 , num3;
+        num1 = 12;
+        num2 = 51;
+        num3 = 3;
 
-        a = a + b;
-        b = a - b;
-        a = a-b;
-        System.out.println(a + " " + b);
 
-        a = a^b;
-        b = a^b;
-        a = a^b;
-        System.out.println(a + " " + b);
+        //-------------Count the digits of number ---------//
+//        int number = 123459234 ;
+//        int cnt =0;
+//        while(number > 0){
+//            int digit = number %10;
+//            number = number /10;
+//            cnt++;
+//        }
+//
+//        System.out.println(cnt);
+
+
+        //---------------reverse the digit of number --------//
+//        
 
    }
 }
