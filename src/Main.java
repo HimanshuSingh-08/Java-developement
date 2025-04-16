@@ -1,6 +1,8 @@
 import javax.xml.crypto.Data;
 import java.awt.*;
 
+import static java.lang.Math.min;
+
 public class Main {
     public static void main(String[] args) {
 //        System.out.println("Hello world!");
@@ -63,8 +65,17 @@ public class Main {
 //        System.out.println(cnt);
 
 
-        //---------------reverse the digit of number --------//
-//        
+        //-------------find the gcd --------//
+        int a = 27 , b = 81;
 
-   }
+        int res = Math.min(a,b);
+        while(res >= 1) {
+            if(a % res == 0 && b % res == 0) {
+                System.out.println("GCD is: " + res);
+                break;
+            }
+            res = res - 1;
+        }
+//        if(res == 1 )System.out.println("Gcd for the no is " + 1);
+    }
 }
