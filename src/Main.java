@@ -66,16 +66,27 @@ public class Main {
 
 
         //-------------find the gcd --------//
-        int a = 27 , b = 81;
-
-        int res = Math.min(a,b);
-        while(res >= 1) {
-            if(a % res == 0 && b % res == 0) {
-                System.out.println("GCD is: " + res);
-                break;
-            }
-            res = res - 1;
-        }
+//        int a = 27 , b = 81;
+//
+//        int res = Math.min(a,b);
+//        while(res >= 1) {
+//            if(a % res == 0 && b % res == 0) {
+//                System.out.println("GCD is: " + res);
+//                break;
+//            }
+//            res = res - 1;
+//        }
 //        if(res == 1 )System.out.println("Gcd for the no is " + 1);
+
+
+        //------------Find all divisors ---------------//
+//        int N = 24;
+//        int i = 1;
+//        while(i<= N){
+//            if(N%i == 0){
+//                System.out.println(i + " is the divisor of the number");
+//            }
+//            i++;
+//        }
     }
 }
