@@ -88,5 +88,21 @@ public class Main {
 //            }
 //            i++;
 //        }
+
+        //---------------Armstrong-----------//
+        int n = 153;
+        int original = n;
+
+        int numberOfdigits = String.valueOf(n).length();
+//        System.out.println(numberOfdigits);
+        int sum = 0;
+        while(n != 0){
+            int digits = n%10;
+            sum += Math.pow(digits, numberOfdigits);
+            n = n/10;
+        }
+
+        if (original == sum) System.out.println("Yes its arsmstrong number");
+        else System.out.println("No its not a arsmtrong number");
     }
 }
