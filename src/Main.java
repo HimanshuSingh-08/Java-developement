@@ -90,19 +90,51 @@ public class Main {
 //        }
 
         //---------------Armstrong-----------//
-        int n = 153;
-        int original = n;
+//        int n = 153;
+//        int original = n;
+//
+//        int numberOfdigits = String.valueOf(n).length();
+////        System.out.println(numberOfdigits);
+//        int sum = 0;
+//        while(n != 0){
+//            int digits = n%10;
+//            sum += Math.pow(digits, numberOfdigits);
+//            n = n/10;
+//        }
+//
+//        if (original == sum) System.out.println("Yes its arsmstrong number");
+//        else System.out.println("No its not a arsmtrong number");
 
-        int numberOfdigits = String.valueOf(n).length();
-//        System.out.println(numberOfdigits);
-        int sum = 0;
-        while(n != 0){
-            int digits = n%10;
-            sum += Math.pow(digits, numberOfdigits);
-            n = n/10;
+
+
+
+        //---------Recursion Fundatmentals --------------//
+
+        //--------Print something n times
+//        printNTimes(5);
+
+        //--------Print 1 to N using recursion
+        printUpToN(10 , 1);
+    }
+
+    public static void printNTimes(int n){
+        // base case
+        if(n==0){
+            return ;
+        }
+        System.out.println("This is himanshu");
+
+        printNTimes(n-1);
+    }
+
+    public static void printUpToN (int N , int start){
+        // base case
+        if (start == N){
+            return ;
         }
 
-        if (original == sum) System.out.println("Yes its arsmstrong number");
-        else System.out.println("No its not a arsmtrong number");
+        System.out.println(start);
+        printUpToN(N, start+1);
     }
+
 }
