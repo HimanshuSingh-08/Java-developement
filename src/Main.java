@@ -117,7 +117,10 @@ public class Main {
 //        printUpToN(10 , 1);
 
         //print N to 1 using recursion
-        printNto1(10);
+//        printNto1(10);
+
+        //Print some of N numbers
+        System.out.println(printSumOfN(21));
     }
 
     public static void printNTimes(int n){
@@ -146,6 +149,15 @@ public class Main {
 
         System.out.println(N);
         printNto1(N-1);
+    }
+
+    public static int printSumOfN(int N){
+       // int sum = 0; : this is major mistake
+        if(N == 0){
+            return sum;
+        }
+        sum += N;
+        printSumOfN(N-1);
     }
 
 }
