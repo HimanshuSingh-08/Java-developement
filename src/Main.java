@@ -114,7 +114,10 @@ public class Main {
 //        printNTimes(5);
 
         //--------Print 1 to N using recursion
-        printUpToN(10 , 1);
+//        printUpToN(10 , 1);
+
+        //print N to 1 using recursion
+        printNto1(10);
     }
 
     public static void printNTimes(int n){
@@ -137,4 +140,13 @@ public class Main {
         printUpToN(N, start+1);
     }
 
+    public static  void printNto1 (int N){
+        // base condition
+        if(N == 0) return ;
+
+        System.out.println(N);
+        printNto1(N-1);
+    }
+
 }
+
