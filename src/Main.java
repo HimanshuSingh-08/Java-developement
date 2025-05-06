@@ -120,7 +120,10 @@ public class Main {
 //        printNto1(10);
 
         //Print some of N numbers
-        System.out.println(printSumOfN(21));
+        int sum = 0;
+       System.out.println(printSumOfN(21, 0));
+
+        
     }
 
     public static void printNTimes(int n){
@@ -151,13 +154,14 @@ public class Main {
         printNto1(N-1);
     }
 
-    public static int printSumOfN(int N){
-       // int sum = 0; : this is major mistake
+    public static int printSumOfN(int N, int sum){
+       int sum = 0; : this is major mistake
         if(N == 0){
             return sum;
+
         }
         sum += N;
-        printSumOfN(N-1);
+        printSumOfN(N-1 , sum);
     }
 
 }
